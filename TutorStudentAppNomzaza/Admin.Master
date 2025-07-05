@@ -1,0 +1,71 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="TutorStudentAppNomzaza.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title><%: Page.Title %> - Qurious Quest Tutors</title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Images/Qurious-Quest-Logo.jpg" rel="shortcut icon" type="image/x-icon" />
+    <link href="Content/Site.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" runat="server" href="~/AdminHome.aspx">My Tutor App</a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" aria-label="Toggle navigation" aria-controls="navbarColor01" data-target=".navbar-collapse" aria-expanded="false">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse" id="navbarColor01">
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" runat="server" href="ManageStudents.aspx">Manage Students</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" runat="server" href="SubjectAdmin.aspx">Manage Subjects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" runat="server" href="TutorRegister.aspx">Manage Tutor</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" runat="server" href="AdminRegister.aspx">Manage Admin</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" runat="server" href="SessionAdmin.aspx">Manage Sessions</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" runat="server" href="ManageNews.aspx">Manage News</a>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <!-- Right-aligned links -->
+                            <li><a class="nav-link btn btn-danger" runat="server" href="https://cooastalstay.co.za/moodle300/">Learn</a></li>
+                            <li><a class="nav-link" runat="server" href="Default.aspx">Sign Out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+
+
+            <div class="container" style="margin-left: 250px;">
+                <!-- Adjust margin for sidebar width -->
+                <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+            </div>
+
+            <!-- Bootstrap and jQuery -->
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        </div>
+    </form>
+</body>
+</html>
