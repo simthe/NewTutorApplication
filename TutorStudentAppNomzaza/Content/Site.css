@@ -1,7 +1,7 @@
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
     padding-bottom: 20px;
-    background-color: #e6f7ff;
+    background-color: #f3fbff;
 }
 
 /* Wrapping element */
@@ -9,6 +9,7 @@ body {
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
+    color: #000;
 }
 
 /* Set widths on the form inputs since otherwise they're 100% wide */
@@ -18,6 +19,50 @@ textarea {
     max-width: 280px;
 }
 
+.nav-style {
+    padding: 12px;
+    background-image: none;
+    background-color: rgba(12, 11, 9, 0.61) !important;
+    box-shadow: none;
+}
+
+.nav-container {
+    padding-left: 0;
+}
+
+.top-nav-style {
+    margin: 8px auto;
+}
+
+@media (min-width: 576px) {
+    .top-nav-style, .nav-container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .top-nav-style, .nav-container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .top-nav-style, .nav-container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .top-nav-style, .nav-container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+        max-width: 1320px;
+    }
+}
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
@@ -29,3 +74,5 @@ textarea {
         padding: 0;
     }
 }
+
+
