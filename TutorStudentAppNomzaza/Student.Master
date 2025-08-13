@@ -13,28 +13,32 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-            
+
             <!-- Top Navbar -->
 
-            <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" runat="server" href="~/StudentHome">Qurious Quest Tutors</a>
-        <button type="button" class="navbar-toggler" data-toggle="collapse" aria-label="Toggle navigation" aria-controls="navbarColor02" data-target=".navbar-collapse" aria-expanded="false">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-collapse collapse" id="navbarColor02">
-            <ul class="navbar-nav me-auto">
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <!-- Right-aligned links -->
-                <li><a class="nav-link btn btn-danger" runat="server" href="https://cooastalstay.co.za/moodle300/">Learn</a></li>
-                <li><a class="nav-link" runat="server" href="StudentProfile.aspx">Profile</a></li>
-                <li><asp:LinkButton ID="lnkSignOut" runat="server" OnClick="lnkSignOut_Click"><a class="nav-link" runat="server" href="Default.aspx">Sign Out</a></asp:LinkButton></li>
-            </ul>
-        </div>
-    </div>
-</nav>
+            <div class="top-nav-style">
+                <span><span>&#9993;</span> info@quriousquest.co.za</span>
+                <span><span>&#9990;</span> +27 73 074 8229</span>
+            </div>
+            <nav class="navbar navbar-expand-lg bg-primary nav-style" data-bs-theme="dark">
+                <div class="container-fluid nav-container">
+                    <a class="navbar-brand" runat="server" href="~/StudentHome">Qurious Quest Tutorsss</a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" aria-label="Toggle navigation" aria-controls="navbarColor02" data-target=".navbar-collapse" aria-expanded="false">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse" id="navbarColor02">
+                        <ul class="navbar-nav me-auto">
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <!-- Right-aligned links -->
+                            <li><a class="nav-link btn btn-danger" runat="server" href="https://cooastalstay.co.za/moodle300/">Learn</a></li>
+                            <li><a class="nav-link" runat="server" href="StudentProfile.aspx">Profile</a></li>
+                            <li>
+                                <asp:LinkButton ID="lnkSignOut" runat="server" OnClick="lnkSignOut_Click"><a class="nav-link" runat="server" href="Default.aspx">Sign Out</a></asp:LinkButton></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
 
             <%--<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
                 <div class="container">
@@ -76,7 +80,6 @@
             <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        </div>
     </form>
 </body>
 </html>
