@@ -18,9 +18,12 @@
 </head>
 <body>
     <form runat="server">
-
-        <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
-            <div class="container-fluid">
+        <div class="top-nav-style">
+            <span><span>&#9993;</span> info@quriousquest.co.za</span>
+            <span><span>&#9990;</span> +27 73 074 8229</span>
+        </div>
+        <nav class="navbar navbar-expand-lg bg-primary nav-style" data-bs-theme="dark">
+            <div class="container-fluid nav-container">
                 <a class="navbar-brand" runat="server" href="~/">Qurious Quest Tutors</a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" aria-label="Toggle navigation" aria-controls="navbarColor01" data-target=".navbar-collapse" aria-expanded="false">
                     <span class="navbar-toggler-icon"></span>
@@ -37,7 +40,7 @@
                             <a class="nav-link" runat="server" href="~/Contact">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" runat="server" href="~/NewsUser">News</a>
+                            <a class="nav-link" runat="server" href="~/News">News</a>
                         </li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
